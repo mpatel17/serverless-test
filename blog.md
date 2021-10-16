@@ -1,6 +1,7 @@
 # [Replace this with your project title]
 
 ## About Me
+I am Misha and I took this course to learn how to code with serverless! 
 
 ## The Premise
 
