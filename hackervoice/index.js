@@ -3,6 +3,8 @@ module.exports = async function (context, req) {
 
     const password = req.query.password
 
+    const access = (req.query.password == "letmein") ? "Access granted." : "Access denied."
+
     // const name = (req.query.name || (req.body && req.body.name));
     // const responseMessage = name
     //     ? "Hello, " + name + ". This HTTP triggered function executed successfully."
@@ -10,6 +12,6 @@ module.exports = async function (context, req) {
 
     context.res = {
         // status: 200, /* Defaults to 200 */
-        body: password
+        body: access
     };
 }
